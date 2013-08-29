@@ -1,0 +1,372 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>ByteCode.gr - Web &amp; Mobile Development</title>
+        <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}" type="image/x-icon" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+          <script src="../assets/js/html5shiv.js"></script>
+        <![endif]-->
+
+        <!-- Stylesheet /--> 
+        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style-responsive.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/jquery.fancybox.css') }}" media="all" />
+
+        <!-- random background -->
+        <style type="text/css">
+
+            #home {
+                width:100%;
+                height:100%;
+                color:#FFF;
+                background:url('{{ background }}') no-repeat center center fixed; 
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+                background-attachment : fixed;  /* FIXED FOR IE */
+            }
+        </style>
+
+    </head>
+    <body>
+        <!-- HEADER HOME  -->
+        <section id="home">
+            <div class="row centered">
+
+                <h1 class="fade-it bytecode-logo"><i class="icon-terminal"></i> import gr.bytecode.*</h1>
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li>
+                            <h2>Web &amp; Mobile Development</h2>
+                        </li>
+                        <li><h2>vision.think</h2></li>
+                        <li><h2>architect.design</h2></li>
+                        <li><h2>build.deploy</h2></li>
+                        <li><h2>love.perfection</h2></li>
+                    </ul>
+                    <h2 class="devices">
+                        <i class="icon-code"></i>
+                        <i class="icon-cloud"></i>
+                        <i class="icon-desktop"></i>
+                        <i class="icon-tablet"></i>
+                        <i class="icon-mobile-phone"></i>
+                        <i class="icon-android"></i>
+                        <i class="icon-html5"></i>
+                    </h2>
+                </div>
+            </div>
+
+            <!-- LITTLE LOGO SEE WHAT WE DO --> 
+            <div id="down_button" class="fade-it"><a href="#about"></a></div>
+            <div class="social-header hidden-phone">
+                <a href="http://www.linkedin.com/in/dbalaouras" class="social-network sn2 linkedin" target="_blank"></a>
+                <a href="https://github.com/dbalaouras" class="social-network sn2 github" target="_blank"></a>
+                <a href="https://www.facebook.com/dbalaouras" class="social-network sn2 facebook" target="_blank"></a>
+                <a href="https://twitter.com/dbalaouras" class="social-network sn2 twitter" target="_blank"></a>
+                <a href="https://plus.google.com/100211800323347120261/posts" class="social-network sn2 google" target="_blank"></a>   
+            </div>
+            <!-- END LITTLE LOGO SEE WHAT WE DO --> 
+
+        </section>
+        <!-- END HEADER HOME  -->
+        
+        <!-- NAVIGATION  -->
+        <div class="navbar-wrapper">
+            <div class="navbar" id="navigation">
+                <div class="navbar-inner">
+                    <button type="button" id="menu_button" class="btn btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="brand" href="">  <img src="/static/img/bytecode_logo_small.png"></a>
+                    <div class="nav-collapse collapse" >
+                        <ul class="nav pull-right">
+                            <li><a href="#home" class="selected">Home</a></li>
+                            <li><a href="#about">about</a></li>
+                            <li><a href="#services">services</a></li>
+                            <li><a href="#contact">contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--</div>-->
+        <!-- END NAVIGATION  --><!-- WHAT WE DO SECTION  -->
+
+        <!-- WHO AM I SECTION  -->
+        <section id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="span12 centered">
+                        <h2>who am I</h2>
+                        <div class="breaker"><span class="left"></span><div class="feather"></div><span class="right"></span></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="span12 centered">
+                        <p class="subtittle">I am a dreamer developer, with a great passion for programming.<br/>I love building top quality, well structured and robust applications in any platform and technology.<br/>Currently, I am an employee of <a href="http://www.ca.com" target="_blank">CA Technologies</a> working on performance monitoring systems.</p>
+                    </div>
+                </div>
+                <div class="row centered">
+                    <div class="span5" id="me">
+                        <div class="team">
+                            <img alt="altname" src="{{ url_for('static', filename='img/team/male1.jpg') }}"/>
+                            <span class="name">Dimitris Balaouras (Dimi)</span><br/>
+                            <span class="position">Senior Software Engineer</span><br/>
+                            <span class="social">
+                                <a href="http://www.linkedin.com/in/dbalaouras" target="_blank" class="social-network linkedin"></a>
+                                <a href="https://www.facebook.com/dbalaouras" target="_blank" class="social-network facebook"></a>
+                                <a href="https://twitter.com/dbalaouras" target="_blank" class="social-network twitter"></a>
+
+                            </span> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END WHO AM I SECTION  -->
+
+        <!-- SERVICES SECTION  -->
+        <section id="services">
+
+            <div class="container">
+                <div class="row">
+                    <div class="span12 centered">
+                        <h2>what I do</h2>
+                        <div class="breaker"><span class="left"></span><div class="feather"></div><span class="right"></span></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="span12 centered">
+                        <p class="subtittle" >my areas of expertise</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="span3">
+                        <div class="box-container">
+                            <div class="box">
+                                <div class="box_icon">
+                                    <i class="icon-code icon-3x"></i>
+                                </div>
+                                <h6><strong>Programming</strong></h6>
+                                <p>
+                                    I love programming languages and I've used several in my projects: Java, PHP, Python, JavaScript, HTML5, C, C#, Pascal, Fortran
+                                </p>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="span3">
+                        <div class="box-container">
+                            <div class="box">
+                                <div class="box_icon">
+                                    <i class="icon-pencil icon-3x"></i>
+                                </div>
+                                <h6><strong>Software Design</strong></h6>
+                                <p>
+                                    I like combining experience, knowledge and ideas into unique software masterpieces
+                                </p>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="span3">
+                        <div class="box-container">
+                            <div class="box">
+                                <div class="box_icon">
+                                    <i class="icon-cloud icon-3x"></i>
+                                </div>
+                                <h6><strong>Service Oriented Architecture</strong></h6>
+                                <p>
+                                    I like building scalable, service oriented, cloud based web applications
+                                </p>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="span3">
+                        <div class="box-container">
+                            <div class="box">
+                                <div class="box_icon">
+                                    <i class="icon-android icon-3x"></i>
+                                </div>
+                                <h6><strong>Android</strong></h6>
+                                <p>
+                                    I love mobile development and I am a big fan of the Android platform
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="span3">
+                        <div class="box-container">
+                            <div class="box">
+                                <div class="box_icon">
+                                    <i class="icon-html5 icon-3x"></i>
+                                </div>
+                                <h6><strong>HTML5 Apps</strong></h6>
+                                <p>
+                                    I enjoy building HTML5 powered mobile and web apps; like the one you're browsing now ;-)
+                                </p>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="span3">
+                        <div class="box-container">
+                            <div class="box">
+                                <div class="box_icon">
+                                    <i class="icon-terminal icon-3x"></i>
+                                </div>
+                                <h6><strong>Web Ops</strong></h6>
+                                <p>
+                                    Modern software development requires fine tuning of systems and experience with of several diverse technologies
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span3">
+                        <div class="box-container">
+                            <div class="box">
+                                <div class="box_icon">
+                                    <i class="icon-linux icon-3x"></i>
+                                </div>
+                                <h6><strong>System Administration</strong></h6>
+                                <p>
+                                    A good application needs a good server, proper setup and regular maintenance
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span3">
+                        <div class="box-container">
+                            <div class="box">
+                                <div class="box_icon">
+                                    <i class="icon-coffee icon-3x"></i>
+                                </div>
+                                <h6><strong>Drink Coffee</strong></h6>
+                                <p>
+                                    Software development requires devotion and endless hours of hard work.<br/>Coffee has always been my friend
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>        
+        <!-- END SERVICES  -->
+        <!-- CONTACT SECTION  -->
+        <section id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="span12 centered">
+                        <h2>contact me</h2>
+                        <div class="breaker">
+                            <span class="left"></span>
+                            <div class="feather"></div>
+                            <span class="right"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="span12 centered">
+                        <p class="subtittle" >I love talking about technology.<br/>Think we can exchange ideas &amp; thoughts? I'd love to hear from you!</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="span7">
+                        <div class="alert" id="contact_alert_container">
+                            <button type="button" class="close" id="close_contact_msg" data-dismiss="alert">&times;</button>
+                            <div id="contact_alert"></div>
+                        </div>
+                        <form name="contact_form" id="contact_form" method="post" action="/send_msg"> 
+                            <input type="text" name="first_name" placeholder="YOUR NAME" id="contact_name"> 
+                            <input type="email" name="email" placeholder="YOUR E-MAIL"  id="contact_email"> 
+                            <textarea name="comments" cols="1" rows="5" placeholder="YOUR MESSAGE"  id="contact_message"></textarea>
+                            <button name="send" type="submit" class="button start"  id="contact_submit">
+                                <i id="contact_loader" class="icon-envelope-alt icon-large" style="margin-left:10px"></i>
+                            </button>
+                        </form>
+                    </div>
+                    <div class="span5">
+                        <div class="info">
+                            <p class="contactAddress">28 Octomber 95<br>41223 Larisa<br>Greece
+                                <br><a class="fancybox-media fancybox.iframe" href="https://maps.google.com/maps?q=28is+Oktovriou+95,+Larisa,+Greece&amp;hl=en&amp;ie=UTF8&amp;ll=39.637092,22.42065&amp;sll=39.637092,22.42065&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed">View Map</a></p>
+                        </div>
+                        <div class="info">
+                            <p class="contactPhone">Phone: (+30) 2410 231 020</p>
+                            <p class="contactEmail">Email: <a href="#">info@bytecode.gr</a></p>
+                            <p class="contactSkype">Skype: <a href="#">dbalaouras</a></p>
+                        </div>
+                        <div class="info">
+                            <p class="contactTime">
+                                Mon-Fri: 9:00am → 19:00pm <br>
+                                Sat: 10:00am → 2:00pm <br>
+                                Sunday: Closed
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END CONTACT SECTION  -->
+
+        <!-- FOOTER  -->
+        <footer>
+
+            <!-- SOCIAL MODULE  --> 
+            <section id="social_module">
+                <div class="container">
+                    <div class="row">
+                        <div class="span12">
+                            <ul>
+                                
+                                <li><a href="http://www.linkedin.com/in/dbalaouras" target=_blank><i class="icon icon-linkedin"></i></a></li>
+                                <li><a href="https://twitter.com/dbalaouras" target=_blank><i class="icon icon-twitter"></i></a></li>
+                                <li><a href="https://github.com/dbalaouras" target=_blank><i class="icon icon-github"></i></a></li>
+                                <li><a href="https://www.facebook.com/dbalaouras" target=_blank><i class="icon icon-facebook"></i></a></li>
+                                <li><a href="https://plus.google.com/100211800323347120261/posts" target=_blank><i class="icon icon-google-plus"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- END SOCIAL MODULE  -->
+
+            <!-- COPYRIGHT  -->
+            <div class="container">
+                <div class="row">
+                    <div class="span6 center">
+                        <img alt="ByteCode" src="static/img/bytecode_logo_small.png">
+                    </div>
+                    <div class="span6">
+                        <p class="copyright text-right center">&copy; 2013 Bytecode.gr </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- END FOOTER  --> 
+
+        <!-- JAVA SCRIPTS  --> 
+        <script src="{{ url_for('static', filename='js/jquery-1.9.1.min.js') }}" ></script>
+        <script src="{{ url_for('static', filename='js/modernizr.custom.js') }}" type="text/javascript" ></script> 
+        <script src="{{ url_for('static', filename='js/jquery.scrollto.js') }}" type="text/javascript"></script>
+        
+        <script src="{{ url_for('static', filename='js/waypoints.min.js') }}" type="text/javascript"></script>
+        <script src="{{ url_for('static', filename='js/jquery.tweet.js') }}" type="text/javascript"></script>
+        <script src="{{ url_for('static', filename='js/bytecode.js') }}" type="text/javascript"></script>
+        <script src="{{ url_for('static', filename='js/bootstrap.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/jquery.flexslider.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/jquery.fancybox.pack.js') }}" type="text/javascript" ></script>
+        <script src="{{ url_for('static', filename='js/jquery.fancybox-media.js') }}?v=1.0.0" type="text/javascript"></script>
+        <!-- END JAVA SCRIPTS  --> 
+    </body>
+</html>
