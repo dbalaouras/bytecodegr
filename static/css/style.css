@@ -1269,3 +1269,13 @@ Custom
 #contact_alert_container {
     display:none;
 }
+
+#about_site {
+    font-size: 18px;
+    line-height:24px;
+}
+
+#about_site h2 {
+    padding: 3px 0 0;
+    margin: 10px 0 20px 0;
+}
