@@ -55,7 +55,7 @@ def get_random_background():
     Get a random background location
     """
 
-    random_int = random.randint(3, 4)
+    random_int = 3
 
     background = url_for('static',
         filename='img/backgrounds/%d.jpg' % random_int)
