@@ -1,0 +1,3 @@
+# configuration
+DEBUG = True
+SEND_FILE_MAX_AGE_DEFAULT = 604800
