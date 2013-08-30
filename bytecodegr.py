@@ -4,8 +4,6 @@ from flask import Flask
 from flask import render_template
 from flask import request
 from flask import jsonify
-from flask import url_for
-import random
 import services
 import configuration
 
@@ -21,7 +19,8 @@ def home():
     Respond to message requests
     """
 
-    return render_template('main.html', background=get_random_background())
+    return render_template('main.html',
+        background=services.get_random_background())
 
 
 @APP.route('/ajax/send_msg', methods=['GET', 'POST'])
@@ -78,17 +77,6 @@ def send_message():
         services.send_message(sender_name, sender_address, message)
     
     return render_template('main.html')
-
-def get_random_background():
-    """
-    Get a random background location
-    """
-
-    random_int = random.randint(1, 4)
-
-    background = url_for('static',
-        filename='img/backgrounds/%d.jpg' % random_int)
-    return background
 
 if __name__ == '__main__':
     APP.run(debug=True)

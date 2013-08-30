@@ -1,5 +1,7 @@
-""" Some doc """
+""" Common shared library """
 import smtplib
+from flask import url_for
+import random
 from email.header import Header
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
@@ -48,5 +50,13 @@ def valid_email(email_addr):
         and re.match(emailregex, email_addr) != None\
         else False
 
-if __name__ == "__main__":
-    send_message("Dimitris Balaouras", "dbalaouras@gmail.com", "hello re")
+def get_random_background():
+    """
+    Get a random background location
+    """
+
+    random_int = random.randint(3, 4)
+
+    background = url_for('static',
+        filename='img/backgrounds/%d.jpg' % random_int)
+    return background
