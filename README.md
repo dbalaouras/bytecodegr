@@ -4,16 +4,15 @@ Complete implementation of my website at http://bytecode.gr.
 
 ## Technologies
 
-This website was built using the following technologies:
-[virtualenv](https://pypi.python.org/pypi/virtualenv)
+This website was created using the following technologies:
 
-Twitter's [Bootstrap](http://getbootstrap.com/) framework
-A theme by [uexel.us](http://uexel.us)
-[Flask](http://flask.pocoo.org/) web microframework for python
-[jQuery](http://jquery.com/) library for JavaScript
-[Jinja](http://jinja.pocoo.org/) template engine
-[Apache](http://httpd.apache.org) HTTP Server
-[modwsgi](http://code.google.com/p/modwsgi/) module for Apache
+* Twitter's [Bootstrap](http://getbootstrap.com/) framework
+* A theme by [uexel.us](http://uexel.us)
+* [Flask](http://flask.pocoo.org/) web microframework for python
+* [jQuery](http://jquery.com/) library for JavaScript
+* [Jinja](http://jinja.pocoo.org/) template engine
+* [Apache](http://httpd.apache.org) HTTP Server
+* [modwsgi](http://code.google.com/p/modwsgi/) module for Apache
 
 
 ## Local installation
