@@ -20,7 +20,8 @@ def home():
     """
 
     return render_template('main.html',
-        background=services.get_random_background())
+        background=services.get_random_background(),
+        )
 
 
 @APP.route('/ajax/send_msg', methods=['GET', 'POST'])
@@ -49,7 +50,7 @@ def send_message_ajax():
                 response = {"status": 1, "message":\
                     "Please submit a valid email address."}
 
-        # this is a bit too broad, but I don't want my APP broken in any way
+        # this is a bit too broad; I don't want my APP broken no matter what
         except Exception as e:
             print e
             response = {"status": 2, "message": \
@@ -79,4 +80,4 @@ def send_message():
     return render_template('main.html')
 
 if __name__ == '__main__':
-    APP.run(debug=True)
+    APP.run(host='0.0.0.0', debug=True)

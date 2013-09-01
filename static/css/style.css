@@ -160,7 +160,7 @@ h2 {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background-attachment : fixed;  /* FIXED FOR IE */
+    background-attachment: fixed;  /* FIXED FOR IE */
 }
 
 

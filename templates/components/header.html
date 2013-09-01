@@ -23,6 +23,17 @@
         #home {
             background-image:url('{{ background }}');
         }
+
+
+        {% if request.user_agent.platform == "iphone" %}
+        #home{
+            background-size: cover;
+            background-attachment: scroll;
+        }
+
+        {% endif %}
+
+
     </style>
 
 </head>

@@ -25,7 +25,6 @@ def send_message(sender_name, sender_address, message):
     msg = MIMEMultipart('alternative')
     msg["From"] = Header(sender, 'utf-8')
     msg["To"] = Header(recipient, 'utf-8')
-    msg["Cc"] = Header(sender, 'utf-8')
     msg["Subject"] = Header(subject, 'utf-8')
     msg.attach(message)
 
