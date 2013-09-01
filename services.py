@@ -54,6 +54,8 @@ def get_random_background():
     Get a random background location
     """
 
+    # disabling random background
+    # random_int = random.randint(3, 4)
     random_int = 3
 
     background = url_for('static',
