@@ -1,0 +1,3 @@
+Jinja2==2.7.1 # templating language for Python
+Werkzeug==0.9.4 #W SGI Utility Library
+Flask==0.10.1 # Web microframework for Python
