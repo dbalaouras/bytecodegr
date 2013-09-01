@@ -23,11 +23,17 @@
         #home {
             background-image:url('{{ background }}');
         }
+        
         {% if request.user_agent.platform in ["iphone","ipad"] and request.user_agent.browser == "safari" %}
         #home{
             background-size: cover;
             background-attachment: scroll;
         }
+
+        html, body {
+            font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+        }
+
         {% endif %}
     </style>
 </head>
