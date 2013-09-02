@@ -7,10 +7,6 @@
  04. Fancybox
  */
 
-// declare some global scope vars we use below
-var $, window, document;
-
-
 /* -- 00. Form submit -- */
 var show_contact_form_alert = function(message, error) {
     "use strict";
