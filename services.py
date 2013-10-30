@@ -55,9 +55,8 @@ def get_random_background():
     """
 
     # disabling random background
-    # random_int = random.randint(3, 4)
-    random_int = 3
+    # random_int = random.randint(3, 5)
 
     background = url_for('static',
-        filename='img/backgrounds/%d.jpg' % random_int)
+        filename='img/backgrounds/%d.jpg' % 3)
     return background
